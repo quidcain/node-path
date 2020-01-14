@@ -11,3 +11,9 @@ console.log(`process.cwd() == ${process.cwd()}`);
 console.log(`path.join(process.cwd(), 'app') == ${path.join(process.cwd(), 'app')}`);
 console.log(`path.resolve('app') == path.join(process.cwd(), 'app')`);
 console.log(`${path.resolve('app')} == ${path.join(process.cwd(), 'app')}`);
+
+const func = () => 1;
+
+module.exports = {
+  func,
+}
